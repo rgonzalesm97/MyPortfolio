@@ -1,0 +1,46 @@
+:host{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.body{
+    height: 100vh;
+    background-color: #262626;
+    padding: 0;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 100%;
+    background-image: url('/../../assets/Homebg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.textContainer{
+    position: absolute;
+    top: 33%;
+    right: 12%;
+}
+
+.socialContainer{
+    background-color: #F2D027;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    padding-right: 10px;
+}
+
+.socialContainer i {
+    font-size: 50px;
+    color: #f6f6f6;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.socialContainer i:hover {
+    transform: scale(1.2);
+}

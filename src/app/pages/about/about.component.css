@@ -1,0 +1,44 @@
+:host{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.body{
+    background-color: #262626;
+    padding: 32px;
+    padding-top: 100px;
+}
+
+img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.aboutText{
+    margin: 0;
+    padding: 10px;
+    background-color: #F2D027;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #f6f6f6;
+}
+
+h2{
+    font-size: 34px;
+    font-weight: 700;
+    color: #f6f6f6;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+}
