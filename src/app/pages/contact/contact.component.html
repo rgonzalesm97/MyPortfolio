@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<div class="body container-fluid d-flex flex-column justify-content-center align-items-center">
+
+    <div class="content">
+        <h1>Contact Me:</h1>
+        <div class="formContainer">
+            <form [formGroup]="form" (ngSubmit)="sendMail($event)">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" formControlName="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" formControlName="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message:</label>
+                      <textarea name="message" class="form-control" id="message" rows="4" style="resize: none;" placeholder="Enter your message" formControlName="message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary mt-4 " [disabled]="form.invalid" >Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div #status id="status">
+        
+    </div>
+
+    <div class="socialContainer">
+        <a href="https://github.com/rgonzalesm97" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rodrigo-gonzales-montes/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/rodrigogonzalesmo/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/Rodrigo83390774" target="_blank"><i class="fa fa-twitter"></i></a>
+    </div>
+
+</div>
+
+
+

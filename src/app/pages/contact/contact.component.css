@@ -1,0 +1,97 @@
+:host{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.body{
+    background-color: #F2D027;
+    padding: 32px;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.content{
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #262626;
+}
+
+.formContainer{
+    background-color: #262626;
+    width: 40vw;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form label{
+    color: #f6f6f6;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: #F2D027;
+    border-color: #F2D027;
+    color: #262626;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#status{
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+#status.success{
+    background-color: rgb(143, 190, 68);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(218, 153, 79);
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 0;
+        pointer-events: none;
+    }
+    10%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.socialContainer{
+    background-color: #262626;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.socialContainer i {
+    font-size: 50px;
+    color: #f6f6f6;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 300ms linear;
+}
+
+.socialContainer i:hover {
+    transform: scale(1.2);  
+}

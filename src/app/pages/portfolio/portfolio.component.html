@@ -1,1 +1,106 @@
-<p>portfolio works!</p>
+<div class="body container-fluid">
+
+    <h1 class="mb-5">My Projects:</h1>
+
+    <div class="row mt-5">
+        <div class="col preview">
+            <a href="https://rgonzalesm97.github.io/MarsWind/" target="_blank" (mouseover)="image1=false" (mouseout)="image1=true">
+                <img *ngIf="image1" src="../../../assets/MarsWindPhoto.png" alt="MarsWind">
+                <img *ngIf="!image1" src="../../../assets/MarsWind.gif" alt="MarsWind">
+            </a>
+        </div>
+        <div class="col content">
+            <h2>Mars Wind:</h2>
+            <div class="techs d-flex">
+                <span class="tech">Vanilla JavaScript</span>
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+            </div>
+            <div class="text mt-3">
+                <p>
+                    Made with vanilla javascript, html and css. This website shows the images of the different rovers
+                    sent to Mars (Curiosity, Spirit and Opportunity).
+                </p>
+                <p>
+                    Choose a rover, choose the Sun (Martian day) and it will show all the photos taken that sun by the
+                    selected rover. The images are requested by the NASA API. This API retrieves data from the rovers.
+                    Pay attention to the home banner… are they always the same images?
+                </p>
+            </div>
+            <div class="buttons mt-5">
+                <a href="https://rgonzalesm97.github.io/MarsWind/" target="_blank" class="btn btn-light">View Project</a>
+                <a href="https://github.com/rgonzalesm97/MarsWind" target="_blank" class="btn btn-light">View Code</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-5">
+        <div class="col content">
+            <h2>WevDebWorld Blog:</h2>
+            <div class="techs d-flex">
+                <span class="tech">TypeScript</span>
+                <span class="tech">Angular</span>
+                <span class="tech">Express</span>
+                <span class="tech">Bootstrap</span>
+                <span class="tech">MongoDB</span>
+            </div>
+            <div class="text mt-3">
+                <p>
+                    WDW is a pre-design of a blog. It has all the functionalities such as article search, article CRUD,
+                    authentication and authorization for the frontend. And as for the backend, it is made with express
+                    with connection to a non-relational database such as Mongo DB. For authorization, bcrypt was used
+                    and JWT (Json Web Token) was used for authentication.
+                </p>
+            </div>
+            <div class="buttons mt-5">
+                <a href="https://web-dev-world.herokuapp.com/pages/home" target="_blank" class="btn btn-light">View Project</a>
+                <a href="https://github.com/rgonzalesm97/WebDevWorld" target="_blank" class="btn btn-light">View Frontent</a>
+                <a href="https://github.com/rgonzalesm97/WebDevWorldBackend" target="_blank" class="btn btn-light">View Backend</a>
+            </div>
+        </div>
+        <div class="col preview">
+            <a href="https://web-dev-world.herokuapp.com/pages/home" target="_blank" (mouseover)="image2=false" (mouseout)="image2=true">
+                <img *ngIf="image2" src="../../../assets/WevDebWorldPhoto.png" alt="WevDebWorld">
+                <img *ngIf="!image2" src="../../../assets/WebDevWorld.gif" alt="WevDebWorld">
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-5">
+        <div class="col preview">
+            <a href="https://musing-ptolemy-15c79f.netlify.app/" target="_blank" (mouseover)="image3=false" (mouseout)="image3=true">
+                <img *ngIf="image3" src="../../../assets/LinkedListPhoto.png" alt="Linked List Visualizer">
+                <img *ngIf="!image3" src="../../../assets/LinkedListVisualizer.gif" alt="Linked List Visualizer">
+            </a>
+        </div>
+        <div class="col content">
+            <h2>Linked List Visualizer:</h2>
+            <div class="techs d-flex">
+                <span class="tech">TypeScript</span>
+                <span class="tech">Angular</span>
+                <span class="tech">Bootstrap</span>
+                <span class="tech">Primeng</span>
+                <span class="tech">Animations</span>
+            </div>
+            <div class="text mt-3">
+                <p>
+                    This web application shows in an animated and didactic way how a linked list works. You can add or
+                    remove nodes or even create a new linked list and each function in it will be animated. To build it,
+                    angular was used together with bootstrap and primeng for the styles. For the animations, a powerful
+                    tool that angular offers us was used, which is angular animations, which is very versatile and
+                    dynamic, at first it may seem complex but once you get the hang of it you will feel the power of
+                    animations in your hands.
+                </p>
+            </div>
+            <div class="buttons mt-5">
+                <a href="https://musing-ptolemy-15c79f.netlify.app/" target="_blank" class="btn btn-light me-4">View Project</a>
+                <a href="https://github.com/rgonzalesm97/LinkedListVisualizer" target="_blank" class="btn btn-light">View Code</a>
+            </div>
+        </div>
+    </div>
+
+</div>
