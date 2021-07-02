@@ -1,9 +1,13 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { fade } from 'src/app/animations';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
+  animations: [
+    fade
+  ]
 })
 export class PortfolioComponent implements OnInit {
 

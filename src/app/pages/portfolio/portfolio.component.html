@@ -1,17 +1,17 @@
 <div class="body container-fluid">
 
-    <h1 class="mb-5">My Projects:</h1>
+    <h1 class="mb-md-5">My Projects:</h1>
 
-    <div class="row mt-5">
-        <div class="col preview">
+    <div class="row mt-2 mt-md-5 flex-column-reverse flex-md-row">
+        <div class="col-md-6 preview">
             <a href="https://rgonzalesm97.github.io/MarsWind/" target="_blank" (mouseover)="image1=false" (mouseout)="image1=true">
-                <img *ngIf="image1" src="../../../assets/MarsWindPhoto.png" alt="MarsWind">
-                <img *ngIf="!image1" src="../../../assets/MarsWind.gif" alt="MarsWind">
+                <img *ngIf="image1" src="../../../assets/MarsWindPhoto.png" alt="MarsWind" @fade>
+                <img *ngIf="!image1" src="../../../assets/MarsWind.gif" alt="MarsWind" @fade>
             </a>
         </div>
-        <div class="col content">
-            <h2>Mars Wind:</h2>
-            <div class="techs d-flex">
+        <div class="col-md-6 content">
+            <h2 class="mt-2 mt-md-0">Mars Wind:</h2>
+            <div class="techs d-flex flex-wrap">
                 <span class="tech">Vanilla JavaScript</span>
                 <span class="tech">HTML</span>
                 <span class="tech">CSS</span>
@@ -27,7 +27,7 @@
                     Pay attention to the home banner… are they always the same images?
                 </p>
             </div>
-            <div class="buttons mt-5">
+            <div class="buttons mt-lg-5 mb-4 mb-md-0">
                 <a href="https://rgonzalesm97.github.io/MarsWind/" target="_blank" class="btn btn-light">View Project</a>
                 <a href="https://github.com/rgonzalesm97/MarsWind" target="_blank" class="btn btn-light">View Code</a>
             </div>
@@ -36,10 +36,10 @@
 
     <hr>
 
-    <div class="row mt-5">
-        <div class="col content">
-            <h2>WevDebWorld Blog:</h2>
-            <div class="techs d-flex">
+    <div class="row mt-2 mt-md-5">
+        <div class="col-md-6 content">
+            <h2 class="mt-2 mt-md-0">WevDebWorld Blog:</h2>
+            <div class="techs d-flex flex-wrap">
                 <span class="tech">TypeScript</span>
                 <span class="tech">Angular</span>
                 <span class="tech">Express</span>
@@ -54,32 +54,32 @@
                     and JWT (Json Web Token) was used for authentication.
                 </p>
             </div>
-            <div class="buttons mt-5">
+            <div class="buttons mt-lg-5 mb-4 mb-md-0">
                 <a href="https://web-dev-world.herokuapp.com/pages/home" target="_blank" class="btn btn-light">View Project</a>
                 <a href="https://github.com/rgonzalesm97/WebDevWorld" target="_blank" class="btn btn-light">View Frontent</a>
                 <a href="https://github.com/rgonzalesm97/WebDevWorldBackend" target="_blank" class="btn btn-light">View Backend</a>
             </div>
         </div>
-        <div class="col preview">
+        <div class="col-md-6 preview">
             <a href="https://web-dev-world.herokuapp.com/pages/home" target="_blank" (mouseover)="image2=false" (mouseout)="image2=true">
-                <img *ngIf="image2" src="../../../assets/WevDebWorldPhoto.png" alt="WevDebWorld">
-                <img *ngIf="!image2" src="../../../assets/WebDevWorld.gif" alt="WevDebWorld">
+                <img *ngIf="image2" src="../../../assets/WevDebWorldPhoto.png" alt="WevDebWorld" @fade>
+                <img *ngIf="!image2" src="../../../assets/WebDevWorld.gif" alt="WevDebWorld" @fade>
             </a>
         </div>
     </div>
 
     <hr>
 
-    <div class="row mt-5">
-        <div class="col preview">
+    <div class="row mt-2 mt-md-5 flex-column-reverse flex-md-row">
+        <div class="col-md-6 preview">
             <a href="https://musing-ptolemy-15c79f.netlify.app/" target="_blank" (mouseover)="image3=false" (mouseout)="image3=true">
-                <img *ngIf="image3" src="../../../assets/LinkedListPhoto.png" alt="Linked List Visualizer">
-                <img *ngIf="!image3" src="../../../assets/LinkedListVisualizer.gif" alt="Linked List Visualizer">
+                <img *ngIf="image3" src="../../../assets/LinkedListPhoto.png" alt="Linked List Visualizer" @fade>
+                <img *ngIf="!image3" src="../../../assets/LinkedListVisualizer.gif" alt="Linked List Visualizer" @fade>
             </a>
         </div>
-        <div class="col content">
-            <h2>Linked List Visualizer:</h2>
-            <div class="techs d-flex">
+        <div class="col-md-6 content">
+            <h2 class="mt-2 mt-md-0">Linked List Visualizer:</h2>
+            <div class="techs d-flex flex-wrap">
                 <span class="tech">TypeScript</span>
                 <span class="tech">Angular</span>
                 <span class="tech">Bootstrap</span>
@@ -96,7 +96,7 @@
                     animations in your hands.
                 </p>
             </div>
-            <div class="buttons mt-5">
+            <div class="buttons mt-lg-5 mb-4 mb-md-0">
                 <a href="https://musing-ptolemy-15c79f.netlify.app/" target="_blank" class="btn btn-light me-4">View Project</a>
                 <a href="https://github.com/rgonzalesm97/LinkedListVisualizer" target="_blank" class="btn btn-light">View Code</a>
             </div>

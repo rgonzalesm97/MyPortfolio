@@ -13,7 +13,8 @@
 }
 
 img{
-    width: 80%;
+    width: 100%;
+    max-width: 700px;
     height: 500px;
 }
 
@@ -54,6 +55,7 @@ h2{
     font-size: 20px;
     font-weight: 700;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .btn:hover{
@@ -66,4 +68,56 @@ hr{
     height: 3px;
     border-radius: 50%;
     margin: 70px 0px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    img{
+        height: 450px;
+    }
+    .text p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    img{
+        height: 350px;
+    }
+    .text p{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    hr{
+        margin: 40px 0px;
+    }
+}
+@media (max-width: 767px) {
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    img{
+        height: 500px;
+    }
+    .text p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    hr{
+        margin: 20px 0px;
+    }
 }

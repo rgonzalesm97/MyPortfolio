@@ -10,7 +10,7 @@
     background-color: #F2D027;
     padding: 32px;
     padding-top: 100px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .content{
@@ -94,4 +94,23 @@ form label{
 
 .socialContainer i:hover {
     transform: scale(1.2);  
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .formContainer{
+        width: 50vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .formContainer{
+        width: 60vw;
+    }
+}
+@media (max-width: 767px) {
+    .formContainer{
+        width: 80vw;
+    }
+    h1{
+        font-size: 40px;
+    }
 }
