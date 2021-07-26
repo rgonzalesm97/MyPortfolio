@@ -9,6 +9,7 @@
 
 .body {
   height: 100vh;
+  width: 100%;
   background-color: #262626;
   padding: 0;
   overflow: hidden;
@@ -70,35 +71,138 @@
   -webkit-mask-size: 100% 100%;
 }
 
-.testimg{
-  width: 500px;
+.mainPhoto{
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  width: 400px;
   z-index: inherit;
 }
 
-/* .mask{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  mask: url('../../../assets/HomeMask.svg');
-  mask-size: 100% 100%;
-  -webkit-mask: url('../../../assets/HomeMask.svg');
-  -webkit-mask-size: 100% 100%;
+.phoneImg{
+  display: none;
 }
 
-.mask img{
-  width: 28vw;
-  position: absolute;
-  left: 7%;
-  bottom: -28%;
-} */
-
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  
+@media (min-width: 1301px) and (max-width: 1450px) {
+  .textContainer {
+    transform: scale(.8);
+    right: 5%;
+  }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .textContainer {
+    transform: scale(.8);
+    right: -3%;
+  }
 }
+@media (max-width: 1200px) {
+  .body {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .textContainer {
+    position: relative;
+    transform: scale(1);
+    top: 15%;
+    right: 0;
+    color: #f6f6f6;
+  }
+
+  .maskContainer{
+    top: 25.9%;
+  }
+
+  .socialContainer {
+    background-color: #f2d027;
+    padding-right: 0;
+    position: relative;
+    width: 100%;
+    bottom: -15%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .textContainer {
+    transform: scale(.8);
+    top: 10%;
+  }
+
+  svg{
+    margin-top: -100px;
+  }
+
+  .maskContainer{
+    top: 14.3%;
+  }
+
+  .socialContainer {
+    bottom: -5%;
+  }
+}
+
 @media (max-width: 767px) {
+  .textContainer {
+    width: 200%;
+    transform: translate(-25%, 0%) scale(.6);
+    left: 0;
+    top: 5%;
+  }
+
+  svg{
+    margin-top: -160px;
+  }
+
+  .maskContainer{
+    top: 7.3%;
+  }
+
+  .socialContainer {
+    bottom: 2%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .body{
+    overflow-y: hidden;
+  }
+  .textContainer {
+    width: 200%;
+    transform: translate(-25%, 0%) scale(.6);
+    left: 0;
+    top: 5%;
+  }
+
+  svg{
+    display: none;
+  }
+
+  .maskContainer{
+    display: none;
+  }
+
+  .phoneImg{
+    display: block;
+    width: 100%;
+  }
+
+  .socialContainer{
+    position: sticky;
+    bottom: 0;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .textContainer {
+    transform: translate(-25%, 0%) scale(.4);
+  }
+
+  .socialContainer i {
+    font-size: 35px;
+    color: #f6f6f6;
+  }
   
 }
