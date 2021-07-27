@@ -31,7 +31,7 @@ import { APP_BASE_HREF } from '@angular/common';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/MyPortfolio/'}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
