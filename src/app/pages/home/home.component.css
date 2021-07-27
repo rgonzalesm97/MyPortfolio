@@ -50,6 +50,7 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: transform 300ms linear;
+  z-index: 31;
 }
 
 .socialContainer i:hover {
@@ -58,13 +59,12 @@
 
 .maskContainer{
   position: absolute;
-  top: 0;
+  top: 0.5px;
   left: 0;
   width: 100%;
   min-width: 1440px;
   height: 100%;
   max-height: 1000px;
-  z-index: 30;
   mask: url('../../../assets/HomeMask.png');
   mask-size: 100% 100%;
   -webkit-mask: url('../../../assets/HomeMask.png');
@@ -110,7 +110,7 @@
   }
 
   .maskContainer{
-    top: 25.9%;
+    top: 223px;
   }
 
   .socialContainer {
@@ -134,7 +134,7 @@
   }
 
   .maskContainer{
-    top: 14.3%;
+    top: 122.5px;
   }
 
   .socialContainer {
@@ -155,7 +155,7 @@
   }
 
   .maskContainer{
-    top: 7.3%;
+    top: 62.5px;
   }
 
   .socialContainer {
